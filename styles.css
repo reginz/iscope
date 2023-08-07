@@ -1,0 +1,14 @@
+@font-face {
+  font-family: stinger700;
+  src: url(fonts/StingerWideTrial-Bold.ttf);
+}
+
+h1,
+h2,
+h3 {
+  font-family: stinger700;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
