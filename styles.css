@@ -1,7 +1,10 @@
 :root {
   --primary: #3c4bbe;
+  --primary-dark: hsl(233, 52%, 40%);
   --secondary: #fac30a;
   --text: #3a4563;
+  --black: #070500;
+  --bg-gray: #eff4fa;
 }
 @font-face {
   font-family: stinger700;
@@ -12,8 +15,27 @@ h1,
 h2,
 h3 {
   font-family: stinger700;
+  color: var(--black);
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: var(--text);
+}
+
+.img-wrapper {
+  width: 260px;
+}
+.img-wrapper img {
+  width: 100%;
+}
+.custom-underline{
+  display: inline-block;
+  line-height: 0.65;
+}
+.dark-underline {
+  border-bottom: 10px solid var(--primary);
+}
+.light-underline {
+  border-bottom: 10px solid var(--secondary);
 }
