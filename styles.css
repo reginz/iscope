@@ -22,6 +22,11 @@ body {
   font-family: "Montserrat", sans-serif;
   color: var(--text);
 }
+.custom-container{
+  padding-left: 104px;
+  padding-right: 104px;
+  max-width: 1200px;
+}
 
 .img-wrapper {
   width: 260px;
@@ -29,7 +34,7 @@ body {
 .img-wrapper img {
   width: 100%;
 }
-.custom-underline{
+.custom-underline {
   display: inline-block;
   line-height: 0.65;
 }
@@ -38,4 +43,44 @@ body {
 }
 .light-underline {
   border-bottom: 10px solid var(--secondary);
+}
+
+.slanted-div {
+  position: relative;
+  padding: 0;
+  background: var(--primary);
+  overflow: visible;
+  z-index: 1;
+}
+/* where the magic happens */
+.slanted-div:before,
+.slanted-div:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  transform-origin: right top;
+  transform: skewY(3deg);
+}
+
+.card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: white;
+  border-radius: 32px;
+}
+.chip {
+  background: var(--primary);
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  padding: 4px 12px;
+  color: white;
+  width: max-content;
+  border-radius: 24px;
 }
