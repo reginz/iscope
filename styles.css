@@ -25,7 +25,6 @@ body {
 .custom-container{
   padding-left: 104px;
   padding-right: 104px;
-  max-width: 1200px;
 }
 
 .img-wrapper {
@@ -65,7 +64,12 @@ body {
   transform-origin: right top;
   transform: skewY(3deg);
 }
-
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(394px, 1fr));
+  row-gap: 2em;
+  
+}
 .card {
   padding: 32px;
   display: flex;
@@ -73,6 +77,7 @@ body {
   gap: 32px;
   background: white;
   border-radius: 32px;
+  width: 394px;
 }
 .chip {
   background: var(--primary);
@@ -83,4 +88,14 @@ body {
   color: white;
   width: max-content;
   border-radius: 24px;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100% !important;
+    max-width: 100%;
+  } 
+  .custom-container{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
