@@ -15,25 +15,31 @@
   </head>
   <body>
     <nav
-      class="bg-[--bg-gray] flex items-center justify-between px-[104px] py-6"
+      class="bg-[--bg-gray] flex items-center justify-between px-8 py-6 lg:px-[104px]"
     >
       <img src="icons/logo.svg" alt="iscope logo" />
-      <div class="flex gap-6">
-        <a href="#"><b>Home</b></a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-        <a href="#">FAQ</a>
-        <a href="#">Blog</a>
+      <div class="flex items-center">
+        <button class="flex md:hidden" onclick="toggleMenu()">
+          <img src="icons/menu.svg" alt="menu" />
+        </button>
+
+        <div class="menu hidden gap-6 flex flex-col absolute mt-8 text-right p-3 rounded-lg bg-[#eff4fa] drop-shadow right-8 md:bg-transparent md:flex-row md:flex md:drop-shadow-none md:mt-0 md:p-0 md:justify-center">
+          <a href="#"><b>Home</b></a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Blog</a>
+        </div>
       </div>
     </nav>
-    <main class="flex bg-[--bg-gray] p-4">
-      <div class="img-wrapper self-start mt-5">
+    <main class="flex  bg-[--bg-gray] p-6">
+      <div class="img-wrapper  self-start mt-5">
         <img src="images/main2.png" alt="hero" />
       </div>
-      <div class="flex flex-col text-center items-center w-9/12 gap-16 py-20">
+      <div class="flex flex-col text-left md:text-center items-center w-full md:w-9/12 gap-16 py-20">
         <div class="flex flex-col gap-8">
-          <h1 class="text-[80px] leading-none">
+          <h1 class=" text-6xl leading-none md:text-[80px]">
             <span class="custom-underline dark-underline">Feel</span> like
             yourself <span class="custom-underline light-underline">again</span>
           </h1>
@@ -45,28 +51,36 @@
           </p>
         </div>
 
-        <div class="flex gap-2">
+        <div class="flex gap-2 flex-col w-full md:w-max md:flex-row">
           <button
-            class="bg-[--primary] items-center text-xl flex gap-1 text-white border-[--primary] px-6 py-5 rounded-full transition ease-in-out hover:bg-[--primary-dark]"
+            class="bg-[--primary] items-center justify-center text-xl flex gap-1 text-white border-[--primary] px-6 py-5 rounded-full transition ease-in-out w-full md:w-max hover:bg-[--primary-dark]"
           >
             Book Now
             <img src="icons/hearth.svg" alt="book now" />
           </button>
           <button
-            class="flex gap-1 text-xl text-[--primary] border border-[--primary] p-5 transition rounded-full hover:bg-[#efefef]"
+            class="flex gap-1 text-xl justify-center text-[--primary] border border-[--primary] p-5 transition rounded-full hover:bg-[#efefef]"
           >
             Contact
           </button>
         </div>
+
+        <div class="md:hidden flex">
+          <img src="images/mobile_landing.png" alt="hero" />
+        </div>
       </div>
+ 
       <div class="img-wrapper self-end mb-20">
         <img src="images/main1.png" alt="hero" />
       </div>
     </main>
     <section class="slanted-div">
       <div class="custom-container pb-12">
-        <h2 class="text-5xl text-white pb-8">Who we help?</h2>
+        <h2 class="text-3xl	md:text-5xl text-white pb-8">Who we help?</h2>
         <hr class="pb-6 w-100" />
+        <div class="tabs flex md:hidden">
+          
+        </div>
         <div class="card-container w-full">
           <div class="card">
             <div class="chip">
@@ -166,6 +180,30 @@
         </div>
       </div>
     </section>
+    <script>
+      function toggleMenu() {
+          const menu = document.querySelector(".menu");
+          menu.classList.toggle('hidden');
+      }
+  
+      document.addEventListener('click', function(event) {
+          const menu = document.querySelector('.menu');
+          const toggleButton = document.querySelector('.flex[onclick="toggleMenu()"]'); 
+  
+          if (!menu.contains(event.target) && !toggleButton.contains(event.target) && !menu.classList.contains('hidden')) {
+              menu.classList.add('hidden');
+          }
+      });
+  
+      document.querySelector('.menu').addEventListener('click', function(event) {
+          event.stopPropagation();
+      });
+  
+      document.querySelector('.flex[onclick="toggleMenu()"]').addEventListener('click', function(event) {
+          event.stopPropagation();
+      });
+  </script>
+  
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>

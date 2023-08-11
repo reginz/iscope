@@ -22,7 +22,26 @@ body {
   font-family: "Montserrat", sans-serif;
   color: var(--text);
 }
-.custom-container{
+
+/* Hamburger button styling */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* By default, links will be displayed */
+nav > div {
+  display: flex;
+}
+
+/* Hamburger icon will be hidden on large screens */
+#menuToggle {
+  display: none;
+}
+
+.custom-container {
   padding-left: 104px;
   padding-right: 104px;
 }
@@ -64,11 +83,10 @@ body {
   transform-origin: right top;
   transform: skewY(3deg);
 }
-.card-container{
+.card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(394px, 1fr));
   row-gap: 2em;
-  
 }
 .card {
   padding: 32px;
@@ -89,12 +107,28 @@ body {
   width: max-content;
   border-radius: 24px;
 }
+/* On smaller screens (e.g., iPad), hide the links and show the hamburger button */
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as needed */
+  nav > div {
+    display: none;
+    flex-direction: column;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+  .img-wrapper {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .card {
     width: 100% !important;
     max-width: 100%;
-  } 
-  .custom-container{
+  }
+  .custom-container {
     padding-left: 1em;
     padding-right: 1em;
   }
