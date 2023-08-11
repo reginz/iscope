@@ -407,41 +407,85 @@
       <div class="custom-container pb-12 pt-10">
         <h2 class="text-3xl md:text-5xl pb-8">FAQ</h2>
         <hr class="mb-6 w-100 border-black" />
+          <div class=" flex gap-4">
+            <div class="w-2/3">
 
+              <div class="accordion p-2 flex flex-col gap-2">
+                <div class="accordion-item">
+                  <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">Lorem ipsum dolor sit amet consectetur. Erat auctor suscipit.</span>
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                      Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-2" aria-expanded="false">
+                    <span class="accordion-title">Lorem ipsum dolor sit amet consectetur. Erat auctor suscipit.</span>
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                      Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-3" aria-expanded="false">
+                    <span class="accordion-title">Lorem ipsum dolor sit amet consectetur. Erat auctor suscipit.</span>
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                      Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-4" aria-expanded="false">
+                    <span class="accordion-title">Lorem ipsum dolor sit amet consectetur. Erat auctor suscipit.</span>
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                      Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">Lorem ipsum dolor sit amet consectetur. Erat auctor suscipit.</span>
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                      Ut tortor pretium viverra suspendisse potenti.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+            <div>
+asdfa
+            </div>
+          </div>
     </section>
 
-    <script>
-      function toggleMenu() {
-        const menu = document.querySelector(".menu");
-        menu.classList.toggle("hidden");
-      }
-
-      document.addEventListener("click", function (event) {
-        const menu = document.querySelector(".menu");
-        const toggleButton = document.querySelector(
-          '.flex[onclick="toggleMenu()"]'
-        );
-
-        if (
-          !menu.contains(event.target) &&
-          !toggleButton.contains(event.target) &&
-          !menu.classList.contains("hidden")
-        ) {
-          menu.classList.add("hidden");
-        }
-      });
-
-      document
-        .querySelector(".menu")
-        .addEventListener("click", function (event) {
-          event.stopPropagation();
-        });
-
-      document
-        .querySelector('.flex[onclick="toggleMenu()"]')
-        .addEventListener("click", function (event) {
-          event.stopPropagation();
-        });
+    <script src="script.js">
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>

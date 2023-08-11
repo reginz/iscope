@@ -107,6 +107,135 @@ nav > div {
   width: max-content;
   border-radius: 24px;
 }
+
+.accordion .accordion-item {
+  background: #fff;
+  border-radius: 16px;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid var(--primary);
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: var(--black);
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  font-weight: 700;
+  outline: none;
+}
+.accordion .accordion-item:hover{
+  background: var(--primary);
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: white;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: var(--primary);
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+  color: #fff;
+}
+/* Accordion Styles */
+
+/* Normal Display */
+.accordion .accordion-item {
+  background: #fff;
+}
+
+.accordion button {
+  color: var(--black);
+}
+
+/* On Hover and Focus for the accordion item's button */
+.accordion .accordion-item:hover, .accordion button:focus {
+  background: var(--primary);
+}
+
+.accordion button:hover, .accordion button:focus {
+  color: white;
+}
+
+/* For Active (expanded) state for the whole accordion item */
+.accordion .accordion-item button[aria-expanded='true'] {
+  color: white;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] + .accordion-content,
+.accordion .accordion-item button[aria-expanded='true'] {
+  background: var(--primary);
+}
+
+/* Accordion content text color */
+.accordion .accordion-content p {
+  color: #fff; /* Making it white as the background for active state is primary */
+}
+
 /* On smaller screens (e.g., iPad), hide the links and show the hamburger button */
 @media (max-width: 768px) {
   /* Adjust the breakpoint as needed */
