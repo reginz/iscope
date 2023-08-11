@@ -23,7 +23,9 @@
           <img src="icons/menu.svg" alt="menu" />
         </button>
 
-        <div class="menu hidden gap-6 flex flex-col absolute mt-8 text-right p-3 rounded-lg bg-[#eff4fa] drop-shadow right-8 md:bg-transparent md:flex-row md:flex md:drop-shadow-none md:mt-0 md:p-0 md:justify-center">
+        <div
+          class="menu hidden gap-6 flex flex-col absolute mt-8 text-right p-3 rounded-lg bg-[#eff4fa] drop-shadow right-8 md:bg-transparent md:flex-row md:flex md:drop-shadow-none md:mt-0 md:p-0 md:justify-center"
+        >
           <a href="#"><b>Home</b></a>
           <a href="#">About Us</a>
           <a href="#">Services</a>
@@ -33,13 +35,16 @@
         </div>
       </div>
     </nav>
-    <main class="flex  bg-[--bg-gray] p-6">
-      <div class="img-wrapper  self-start mt-5">
+    <!-- hero -->
+    <main class="flex bg-[--bg-gray] p-6">
+      <div class="img-wrapper self-start mt-5">
         <img src="images/main2.png" alt="hero" />
       </div>
-      <div class="flex flex-col text-left md:text-center items-center w-full md:w-9/12 gap-16 py-20">
+      <div
+        class="flex flex-col text-left md:text-center items-center w-full md:w-9/12 gap-16 py-20"
+      >
         <div class="flex flex-col gap-8">
-          <h1 class=" text-6xl leading-none md:text-[80px]">
+          <h1 class="text-6xl leading-none md:text-[80px]">
             <span class="custom-underline dark-underline">Feel</span> like
             yourself <span class="custom-underline light-underline">again</span>
           </h1>
@@ -69,18 +74,16 @@
           <img src="images/mobile_landing.png" alt="hero" />
         </div>
       </div>
- 
+
       <div class="img-wrapper self-end mb-20">
         <img src="images/main1.png" alt="hero" />
       </div>
     </main>
+    <!-- who we help-->
     <section class="slanted-div">
       <div class="custom-container pb-12">
-        <h2 class="text-3xl	md:text-5xl text-white pb-8">Who we help?</h2>
+        <h2 class="text-3xl md:text-5xl text-white pb-8">Who we help?</h2>
         <hr class="pb-6 w-100" />
-        <div class="tabs flex md:hidden">
-          
-        </div>
         <div class="card-container w-full">
           <div class="card">
             <div class="chip">
@@ -119,7 +122,7 @@
           </div>
           <div class="card">
             <div class="chip">
-              for men <img src="icons/woman.svg" alt="for woman" />
+              for men <img src="icons/men.svg" alt="for woman" />
             </div>
             <div class="flex flex-col gap-8">
               <div class="flex gap-4 items-start font-light">
@@ -180,30 +183,118 @@
         </div>
       </div>
     </section>
+
+    <!--  how can we help -->
+    <section class="bg-[#eff4fa]">
+      <div class="custom-container pb-12 pt-10">
+        <h2 class="text-3xl md:text-5xl pb-8">How can we help?</h2>
+        <hr class="mb-6 w-100 border-black" />
+
+        <div class="flex gap-4">
+          <div class="w-1/2 p-6 bg-white rounded-[32px] flex flex-col gap-10">
+            <div class="flex flex-col gap-6">
+              <div class="chip">
+                for women <img src="icons/woman.svg" alt="for woman" />
+              </div>
+              <div>
+                <h3 class="text-3xl pb-6">Monalisa Touch</h3>
+                <p class="font-[300]">
+                  MonaLisa Touch® is an innovative laser, designed and produced
+                  by DEKA (Italy), that delivers fractional CO2 laser energy to
+                  soft tissues. Common procedures are often performed in an
+                  office-environment, without anesthesia or downtime, such as
+                  ablative skin resurfacing, skin tags or vaporization of small
+                  lesions.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class="flex w-100 gap-3 flex-wrap">
+                <div class="bg-[#efefef] px-4 py-1 rounded-full">
+                  <p class="font-[600] text-[--primary]">
+                    Vaginal rejuvenation
+                  </p>
+                </div>
+                <div class="bg-[#efefef] px-4 py-1 rounded-full">
+                  <p class="font-[600] text-[--primary]">
+                    Treatment of vaginal infections
+                  </p>
+                </div>
+                <div class="bg-[#efefef] px-4 py-1 rounded-full">
+                  <p class="font-[600] text-[--primary]">
+                    Urinary incontinence treatment
+                  </p>
+                </div>
+                <div class="bg-[#efefef] px-4 py-1 rounded-full">
+                  <p class="font-[600] text-[--primary]">Vaginal Tightening</p>
+                </div>
+                <div class="bg-[#efefef] px-4 py-1 rounded-full">
+                  <p class="font-[600] text-[--primary]">Facilitating Orgasm</p>
+                </div>
+                <div class="bg-[#efefef] px-4 py-1 rounded-full">
+                  <p class="font-[600] text-[--primary]">
+                    Menopausal dryness treatment
+                  </p>
+                </div>
+                <div class="bg-[#efefef] px-4 py-1 rounded-full">
+                  <p class="font-[600] text-[--primary]">
+                    Laser Vaginal Rejuvenation
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <div>
+                  <span class="w-[56px] h-[56px] rounded-full bg-[--primary]"></span>
+                </div>
+                <div>
+                  <button
+                    class="flex gap-1 text-xl justify-center text-[--primary] border border-[--primary] p-5 transition rounded-full hover:bg-[#efefef]"
+                  >
+                    Discover More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script>
       function toggleMenu() {
-          const menu = document.querySelector(".menu");
-          menu.classList.toggle('hidden');
+        const menu = document.querySelector(".menu");
+        menu.classList.toggle("hidden");
       }
-  
-      document.addEventListener('click', function(event) {
-          const menu = document.querySelector('.menu');
-          const toggleButton = document.querySelector('.flex[onclick="toggleMenu()"]'); 
-  
-          if (!menu.contains(event.target) && !toggleButton.contains(event.target) && !menu.classList.contains('hidden')) {
-              menu.classList.add('hidden');
-          }
+
+      document.addEventListener("click", function (event) {
+        const menu = document.querySelector(".menu");
+        const toggleButton = document.querySelector(
+          '.flex[onclick="toggleMenu()"]'
+        );
+
+        if (
+          !menu.contains(event.target) &&
+          !toggleButton.contains(event.target) &&
+          !menu.classList.contains("hidden")
+        ) {
+          menu.classList.add("hidden");
+        }
       });
-  
-      document.querySelector('.menu').addEventListener('click', function(event) {
+
+      document
+        .querySelector(".menu")
+        .addEventListener("click", function (event) {
           event.stopPropagation();
-      });
-  
-      document.querySelector('.flex[onclick="toggleMenu()"]').addEventListener('click', function(event) {
+        });
+
+      document
+        .querySelector('.flex[onclick="toggleMenu()"]')
+        .addEventListener("click", function (event) {
           event.stopPropagation();
-      });
-  </script>
-  
+        });
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
