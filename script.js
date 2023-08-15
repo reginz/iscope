@@ -53,13 +53,13 @@ let currentIndex = 1; // Starting at the 2nd card
 updateCarouselPosition();
 
 function updateCarouselPosition() {
-  const moveValue = -(cardWidth + 5) * currentIndex;
+  const moveValue = -(cardWidth + 10) * currentIndex;
   track.style.transform = `translateX(${moveValue}px)`;
 }
 
 nextButton.addEventListener("click", function () {
   // Ensure we don't go beyond the 3rd card for the leftmost position
-  if (currentIndex < cards.length - 2) {
+  if (currentIndex < cards.length - 1) {
     currentIndex++;
   }
   updateCarouselPosition();
