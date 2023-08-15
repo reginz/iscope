@@ -48,7 +48,7 @@ const nextButton = document.getElementById("nextBtn");
 const prevButton = document.getElementById("prevBtn");
 const cardWidth = cards[0].getBoundingClientRect().width;
 
-let currentIndex = 0; // Starting at the 2nd card
+let currentIndex = 1; // Starting at the 2nd card
 
 updateCarouselPosition();
 
@@ -59,7 +59,7 @@ function updateCarouselPosition() {
 
 nextButton.addEventListener("click", function () {
   // Ensure we don't go beyond the 3rd card for the leftmost position
-  if (currentIndex < cards.length - 3) {
+  if (currentIndex < cards.length - 2) {
     currentIndex++;
   }
   updateCarouselPosition();
@@ -67,7 +67,7 @@ nextButton.addEventListener("click", function () {
 
 prevButton.addEventListener("click", function () {
   // Ensure we don't go before the 1st card for the leftmost position
-  if (currentIndex > -1) {
+  if (currentIndex > 0) {
     currentIndex--;
   }
   updateCarouselPosition();
