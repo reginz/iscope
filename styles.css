@@ -236,6 +236,11 @@ nav > div {
   color: #fff; /* Making it white as the background for active state is primary */
 }
 
+.bg-img{
+  background-image: url(images/background.svg);
+}
+
+
 /* On smaller screens (e.g., iPad), hide the links and show the hamburger button */
 @media (max-width: 768px) {
   /* Adjust the breakpoint as needed */
