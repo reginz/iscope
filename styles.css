@@ -84,10 +84,26 @@ nav > div {
   transform: skewY(3deg);
 }
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(394px, 1fr));
-  row-gap: 2em;
+/*  display: grid;*/
+/*  grid-template-columns: repeat(auto-fill, minmax(394px, 1fr));*/
+/*  row-gap: 2em;*/
+gap: 1rem;
 }
+
+.container{
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*@media (min-width: 768px) {
+
+.start-main{
+  min-height: 75vh;
+  align-items: center;
+}}*/
+
 .card {
   padding: 32px;
   display: flex;
@@ -95,7 +111,7 @@ nav > div {
   gap: 32px;
   background: white;
   border-radius: 32px;
-  width: 394px;
+  width: 100%;
 }
 .chip {
   background: var(--primary);
