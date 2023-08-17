@@ -299,6 +299,29 @@ nav > div {
   transform: scale(1); /* Center cards */
 }
 
+.icon-wrapper {
+  position: relative;
+}
+
+.icon-wrapper:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #efefef;
+  color: #3a4563;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  transition: opacity 0.5s ease-in-out;
+}
+.icon-wrapper:hover::after {
+  opacity: 1;
+}
+
+
+
 /* On smaller screens (e.g., iPad), hide the links and show the hamburger button */
 @media (max-width: 768px) {
   /* Adjust the breakpoint as needed */
