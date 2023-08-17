@@ -73,7 +73,8 @@ prevButton.addEventListener("click", function () {
   updateCarouselPosition();
 });
 
-
+//TABS 
+//WHO WE HELP TABS
 document.getElementById('woman-button').addEventListener('click', function() {
   this.classList.add('bg-white', 'text-[#3c4bbe]');
   document.getElementById('man-button').classList.remove('bg-white', 'text-[#3c4bbe]');
@@ -87,4 +88,23 @@ document.getElementById('man-button').addEventListener('click', function() {
   document.getElementById('woman-button').classList.add('text-white');
   document.getElementById('woman-card').style.display = 'none';
   document.getElementById('man-card').style.display = 'block';
+});
+//HOW CAN WE HELP TANS
+//HOW CAN WE HELP TABS
+document.getElementById('monalisa-button').addEventListener('click', function() {
+  this.classList.add('bg-[#3c4bbe]', 'text-white');
+  document.getElementById('viasure-button').classList.remove('bg-[#3c4bbe]', 'text-white');
+  document.getElementById('viasure-button').classList.add('text-[#3c4bbe]');
+
+  document.getElementById('monalisa-card').style.display = 'block';
+  document.getElementById('viasure-card').style.display = 'none';
+});
+
+document.getElementById('viasure-button').addEventListener('click', function() {
+  this.classList.add('bg-[#3c4bbe]', 'text-white');
+  document.getElementById('monalisa-button').classList.remove('bg-[#3c4bbe]', 'text-white');
+  document.getElementById('monalisa-button').classList.add('text-[#3c4bbe]');
+
+  document.getElementById('monalisa-card').style.display = 'none';
+  document.getElementById('viasure-card').style.display = 'block';
 });
