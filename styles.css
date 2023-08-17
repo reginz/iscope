@@ -130,6 +130,8 @@ nav > div {
 }
 .accordion .accordion-item button[aria-expanded="true"] {
   border-bottom: 1px solid var(--primary);
+  transition: ease-in-out;
+
 }
 .accordion button {
   position: relative;
@@ -144,6 +146,7 @@ nav > div {
   background: none;
   font-weight: 700;
   outline: none;
+  transition: ease-in-out;
 }
 .accordion .accordion-item:hover {
   background: var(--primary);
@@ -166,11 +169,12 @@ nav > div {
   display: inline-block;
   position: absolute;
   top: 18px;
-  right: 0;
+  right: .5em;
   width: 22px;
   height: 22px;
   border: 1px solid;
   border-radius: 22px;
+
 }
 .accordion button .icon::before {
   display: block;
@@ -237,6 +241,11 @@ nav > div {
 .accordion button:hover,
 .accordion button:focus {
   color: white;
+  
+}
+.accordion button:hover{
+  border-radius: 16px;
+
 }
 
 /* For Active (expanded) state for the whole accordion item */
@@ -248,7 +257,15 @@ nav > div {
 .accordion .accordion-item button[aria-expanded="true"] {
   background: var(--primary);
 }
+.accordion-item button[aria-expanded="true"]{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.accordion-content{
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 
+}
 /* Accordion content text color */
 .accordion .accordion-content p {
   color: #fff; /* Making it white as the background for active state is primary */
