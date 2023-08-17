@@ -313,6 +313,9 @@ nav > div {
   .img-wrapper {
     display: none;
   }
+  .chip{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {

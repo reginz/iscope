@@ -72,3 +72,19 @@ prevButton.addEventListener("click", function () {
   }
   updateCarouselPosition();
 });
+
+
+document.getElementById('woman-button').addEventListener('click', function() {
+  this.classList.add('bg-white', 'text-[#3c4bbe]');
+  document.getElementById('man-button').classList.remove('bg-white', 'text-[#3c4bbe]');
+  document.getElementById('woman-card').style.display = 'block';
+  document.getElementById('man-card').style.display = 'none';
+});
+
+document.getElementById('man-button').addEventListener('click', function() {
+  this.classList.add('bg-white', 'text-[#3c4bbe]');
+  document.getElementById('woman-button').classList.remove('bg-white', 'text-[#3c4bbe]');
+  document.getElementById('woman-button').classList.add('text-white');
+  document.getElementById('woman-card').style.display = 'none';
+  document.getElementById('man-card').style.display = 'block';
+});
