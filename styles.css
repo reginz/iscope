@@ -320,8 +320,6 @@ nav > div {
   opacity: 1;
 }
 
-
-
 /* On smaller screens (e.g., iPad), hide the links and show the hamburger button */
 @media (max-width: 768px) {
   /* Adjust the breakpoint as needed */
