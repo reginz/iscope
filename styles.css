@@ -328,6 +328,12 @@ nav > div {
     flex-direction: column;
   }
 
+  .card-container{
+    display: flex;
+  }
+  .carousel-container {
+    overflow-y: scroll;
+  }
   #menuToggle {
     display: block;
   }
@@ -342,7 +348,7 @@ nav > div {
 @media screen and (max-width: 600px) {
   .card {
     width: 100% !important;
-    max-width: 100%;
+
   }
   .custom-container {
     padding-left: 1em;

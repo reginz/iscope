@@ -46,7 +46,7 @@ const track = document.querySelector(".carousel-track");
 const cards = Array.from(track.children);
 const nextButton = document.getElementById("nextBtn");
 const prevButton = document.getElementById("prevBtn");
-const cardWidth = cards[0].getBoundingClientRect().width;
+let cardWidth = cards[0].getBoundingClientRect().width;
 
 let currentIndex = 1; // Starting at the 2nd card
 
@@ -58,7 +58,7 @@ function updateCarouselPosition() {
 }
 
 nextButton.addEventListener("click", function () {
-  // Ensure we don't go beyond the 3rd card for the leftmost position
+  cardWidth = cards[0].getBoundingClientRect().width; // Update cardWidth
   if (currentIndex < cards.length - 1) {
     currentIndex++;
   }
@@ -66,7 +66,7 @@ nextButton.addEventListener("click", function () {
 });
 
 prevButton.addEventListener("click", function () {
-  // Ensure we don't go before the 1st card for the leftmost position
+  cardWidth = cards[0].getBoundingClientRect().width; // Update cardWidth
   if (currentIndex > 0) {
     currentIndex--;
   }
