@@ -118,6 +118,19 @@ nav > div {
   padding: 1rem;
 }
 
+
+/* only for mobile*/
+@media screen and (max-width: 768px) {
+  *{
+
+  }
+}
+
+
+.reach-us-section .card{
+  padding: 1rem;
+}
+
 .reach-us-section .card.form-card{
   padding: 2rem;
 }
@@ -144,6 +157,7 @@ nav > div {
 .accordion .accordion-item {
   background: #fff;
   border-radius: 16px;
+  transition-duration: .2s;
 }
 .accordion .accordion-item button[aria-expanded="true"] {
   border-bottom: 1px solid var(--primary);
@@ -155,7 +169,7 @@ nav > div {
   display: block;
   text-align: left;
   width: 100%;
-  padding: 1em 0;
+  padding: 1.5em 1em;
   color: var(--black);
   font-size: 1.15rem;
   font-weight: 400;
@@ -164,14 +178,13 @@ nav > div {
   font-weight: 700;
   outline: none;
   transition: ease-in-out;
-  
+
 }
 .accordion .accordion-item:hover {
   background: var(--primary);
 }
 
-.accordion button:hover,
-.accordion button:focus {
+.accordion button:hover{
   cursor: pointer;
   color: white;
 }
@@ -185,13 +198,15 @@ nav > div {
   border: 1px solid var(--primary);
 }
 .accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
+  width: 100%;
+  display: block;
+  padding-right: 2rem;
 }
 .accordion button .icon {
   display: inline-block;
   position: absolute;
-  top: 18px;
-  right: .5em;
+  top: 2rem;
+  right: 1rem;
   width: 22px;
   height: 22px;
   border: 1px solid;
@@ -238,6 +253,8 @@ nav > div {
   overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .accordion .accordion-content p {
   font-size: 1rem;
@@ -250,30 +267,14 @@ nav > div {
 /* Normal Display */
 .accordion .accordion-item {
   background: #fff;
-  
+
 }
 
 .accordion button {
   color: var(--black);
-  
+  border-radius: 1rem;
 }
 
-/* On Hover and Focus for the accordion item's button */
-.accordion .accordion-item:hover,
-.accordion button:focus {
-  background: var(--primary);
-
-}
-
-.accordion button:hover,
-.accordion button:focus {
-  color: white;
-  
-}
-.accordion button:hover{
-  border-radius: 16px;
-
-}
 
 /* For Active (expanded) state for the whole accordion item */
 .accordion .accordion-item button[aria-expanded="true"] {
@@ -285,8 +286,8 @@ nav > div {
   background: var(--primary);
 }
 .accordion-item button[aria-expanded="true"]{
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+
+  border-radius: 1rem 1rem 0 0;
 }
 .accordion-content{
   border-bottom-left-radius: 16px;
