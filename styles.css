@@ -259,7 +259,6 @@ nav > div {
 .accordion .accordion-content p {
   font-size: 1rem;
   font-weight: 300;
-  margin: 2em 0;
   color: #fff;
 }
 /* Accordion Styles */
@@ -382,4 +381,47 @@ nav > div {
     padding-left: 1em;
     padding-right: 1em;
   }
+}
+
+.article-big-cover {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  padding-top: calc(9 / 16 * 100%);
+  background-position: center;
+  background-size: cover;
+}
+
+.display-5 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.blog-container p, .blog-container img, .blog-container h2, .blog-container h3 , .blog-container h4, .blog-container h5, .blog-container h6 {
+  margin-bottom: 1rem;
+}
+
+.blog-container h2{
+  font-size: 1.4rem;
+}
+
+.blockquote {
+  margin-bottom: 1rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid var(--primary);
+  font-size: 1;
+  background-color: rgba(60, 75, 190, 0.05);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.blockquote p{
+  margin-bottom: 0;
+}
+
+.blog-container a{
+  color: var(--primary);
+  text-decoration: underline;
 }
