@@ -290,7 +290,7 @@
               </div>
 
               <div class="flex justify-between gap-3 items-center flex-wrap mt-8">
-                <div class="icon-container flex">
+                <div class="icon-container md:flex hidden">
                  
                 <div
                 class="icon-wrapper -ml-2 w-[56px] border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center transform transition-transform duration-500  hover:-translate-y-4 hover:-translate-x-2 "
@@ -339,7 +339,78 @@
                   />
                 </div>
                 </div> 
+                <div class="icon-container md:hidden flex flex-col gap-2" >
+                 <div class="flex items-center gap-1">
+                  <div
+                  class="w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center"
+                  >
+  
+                      <img
+                        src="icons/dna.svg"
+                        alt="Hormone and chemical free."
+                        width="20"
+                      />   
+  
+                    </div>
+                    <span class="text-[#3A4563] font-extralight">Hormone and chemical free</span>
+                 </div>
 
+                 <div class="flex items-center gap-1">
+                    <div
+                    class=" w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center "
+                    >
+                      <img
+                        src="icons/calendar.svg"
+                        alt="Elective procedure, no referral"
+                        width="20"
+                      />
+                    </div>
+                    <span class="text-[#3A4563] font-extralight">Elective procedure, no referral</span>
+
+                    </div>
+                    <div class="flex items-center gap-1">
+
+                    <div
+                    class="w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center "
+                    >
+                      <img
+                        src="icons/run.svg"
+                        alt="No downtime"
+                        width="20"
+                      />
+                    </div>
+                    <span class="text-[#3A4563] font-extralight">No downtime</span>
+
+                    </div>
+                    <div class="flex items-center gap-1">
+
+                    <div
+                    class=" w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center "
+                    >
+                      <img
+                        src="icons/chop.svg"
+                        alt="Easy non-surgical in office-procedure"
+                        width="20"
+                      />
+                    </div>
+                    <span class="text-[#3A4563] font-extralight">Easy non-surgical in office-procedure</span>
+
+                    </div>
+                    <div class="flex items-center gap-1">
+
+                    <div
+                    class="w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center "
+                    >
+                    <img
+                      src="icons/timer.svg"
+                      alt="Three treatments, 5 mins each, 6-week intervals."
+                      width="20"
+                    />
+                  </div>
+                  <span class="text-[#3A4563] font-extralight">Three treatments, 5 mins each, 6-week intervals.</span>
+
+                    </div>
+                  </div> 
                 <button
                   class="flex gap-1 text-xl justify-center text-[--primary] border border-[--primary] p-5 w-full transition rounded-full md:w-max hover:bg-[#efefef]"
                 >
@@ -349,7 +420,6 @@
             </div>
           </div>
           <div  id="viasure-card"
-
             class="w-full md:w-1/2 md:flex hidden p-6 bg-white rounded-[32px] flex flex-col gap-10 justify-between"
           >
             <div class="flex flex-col gap-6">
@@ -400,55 +470,134 @@
                 </div>
               </div>
 
-              <div class="flex justify-between gap-3 items-center flex-wrap">
-                <div class="flex">
-                  <div
-                    class="w-[56px] border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center"
-                  >
-                    <img
-                      src="icons/timer.svg"
-                      alt="Three treatments, 5 mins each, 6-week intervals."
-                    />
-                  </div>
-                  <div
-                    class="w-[56px] -ml-2 border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center"
-                  >
+              <div class="flex justify-between gap-3 items-center flex-wrap mt-8">
+                <div class="icon-container md:flex hidden">
+                 
+                <div
+                class="icon-wrapper -ml-2 w-[56px] border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center transform transition-transform duration-500  hover:-translate-y-4 hover:-translate-x-2 "
+                data-tooltip="Hormone and chemical free"
+                >
+
                     <img
                       src="icons/dna.svg"
-                      alt="Three treatments, 5 mins each, 6-week intervals."
-                    />
+                      alt="Hormone and chemical free."
+                    />   
+
                   </div>
                   <div
-                    class="w-[56px] -ml-2 border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center"
+                  class="icon-wrapper -ml-2 w-[56px] border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center transform transition-transform duration-500  hover:-translate-y-4 hover:-translate-x-2 "
+                  data-tooltip="Elective procedure, no referral"
                   >
                     <img
                       src="icons/calendar.svg"
-                      alt="Three treatments, 5 mins each, 6-week intervals."
+                      alt="Elective procedure, no referral"
                     />
                   </div>
                   <div
-                    class="w-[56px] -ml-2 border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center"
+                  class="icon-wrapper -ml-2 w-[56px] border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center transform transition-transform duration-500  hover:-translate-y-4 hover:-translate-x-2 "
+                  data-tooltip="No downtime"
                   >
                     <img
                       src="icons/run.svg"
-                      alt="Three treatments, 5 mins each, 6-week intervals."
+                      alt="No downtime"
                     />
                   </div>
                   <div
-                    class="w-[56px] -ml-2 border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center"
+                  class="icon-wrapper -ml-2 w-[56px] border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center transform transition-transform duration-500  hover:-translate-y-4 hover:-translate-x-2 "
+                  data-tooltip="Easy non-surgical in office-procedure"
                   >
                     <img
                       src="icons/chop.svg"
-                      alt="Three treatments, 5 mins each, 6-week intervals."
+                      alt="Easy non-surgical in office-procedure"
                     />
                   </div>
+                  <div
+                  class="icon-wrapper -ml-2 w-[56px] border-2 border-white h-[56px] rounded-full bg-[--primary] flex items-center justify-center transform transition-transform duration-500  hover:-translate-y-4 hover:-translate-x-2 "
+                  data-tooltip="Three treatments, 5 mins each,&#10;6-week intervals.">                 
+                  <img
+                    src="icons/timer.svg"
+                    alt="Three treatments, 5 mins each, 6-week intervals."
+                  />
                 </div>
-                <button
+                </div> 
+                <div class="icon-container md:hidden flex flex-col gap-2" >
+                 <div class="flex items-center gap-1">
+                  <div
+                  class="w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center"
+                  >
+  
+                      <img
+                        src="icons/dna.svg"
+                        alt="Hormone and chemical free."
+                        width="20"
+                      />   
+  
+                    </div>
+                    <span class="text-[#3A4563] font-extralight">Hormone and chemical free</span>
+                 </div>
+
+                 <div class="flex items-center gap-1">
+                    <div
+                    class=" w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center "
+                    >
+                      <img
+                        src="icons/calendar.svg"
+                        alt="Elective procedure, no referral"
+                        width="20"
+                      />
+                    </div>
+                    <span class="text-[#3A4563] font-extralight">Elective procedure, no referral</span>
+
+                    </div>
+                    <div class="flex items-center gap-1">
+
+                    <div
+                    class="w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center "
+                    >
+                      <img
+                        src="icons/run.svg"
+                        alt="No downtime"
+                        width="20"
+                      />
+                    </div>
+                    <span class="text-[#3A4563] font-extralight">No downtime</span>
+
+                    </div>
+                    <div class="flex items-center gap-1">
+
+                    <div
+                    class=" w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center "
+                    >
+                      <img
+                        src="icons/chop.svg"
+                        alt="Easy non-surgical in office-procedure"
+                        width="20"
+                      />
+                    </div>
+                    <span class="text-[#3A4563] font-extralight">Easy non-surgical in office-procedure</span>
+
+                    </div>
+                    <div class="flex items-center gap-1">
+
+                    <div
+                    class="w-[32px] border-2 border-white h-[32px] rounded-full bg-[--primary] flex items-center justify-center "
+                    >
+                    <img
+                      src="icons/timer.svg"
+                      alt="Three treatments, 5 mins each, 6-week intervals."
+                      width="20"
+                    />
+                  </div>
+                  <span class="text-[#3A4563] font-extralight">Three treatments, 5 mins each, 6-week intervals.</span>
+
+                    </div>
+                  </div> 
+                  <button
                   class="flex gap-1 text-xl justify-center text-[--primary] border border-[--primary] p-5 w-full transition rounded-full md:w-max hover:bg-[#efefef]"
                 >
                   Discover More
                 </button>
-              </div>
+
             </div>
           </div>
         </div>
@@ -538,6 +687,7 @@
           </div>
     </section>
 
+    <!--They FELT-->
     <section class="bg-[--primary] bg-img">
       <div class="custom-container pb-12 pt-10">
         <h2 class="text-3xl text-white md:text-5xl pb-8">They felt.</h2>
