@@ -133,6 +133,8 @@ document.getElementById('toronto-button').addEventListener('click', function() {
   document.getElementById('vancouver-location').style.display = 'none';
 });
 
+
+
 function toggleDropdown() {
   var dropdownMenu = document.getElementById("dropdown-menu");
   if (dropdownMenu.style.display === "none") {

@@ -16,7 +16,7 @@
 </head>
 <body class="bg-[--bg-gray] ">
   <nav
-  class="bg-[--bg-gray] flex items-center justify-between px-8 py-6 lg:px-[104px]"
+  class="bg-[--bg-gray] flex items-center justify-between container py-6"
 >
   <img src="icons/logo.svg" alt="iscope logo" />
   <div class="flex items-center">
@@ -25,7 +25,7 @@
     </button>
 
     <div
-      class="menu hidden gap-6 flex flex-col absolute mt-8 text-right rounded-lg bg-[#eff4fa] drop-shadow right-8 md:bg-transparent md:flex-row md:flex md:drop-shadow-none md:mt-0 md:p-0 md:justify-center"
+      class="menu hidden gap-6 flex flex-col absolute md:relative mt-8 text-right p-3 rounded-lg bg-[#eff4fa] drop-shadow right-8 md:bg-transparent md:flex-row md:flex md:drop-shadow-none md:mt-0 md:p-0 md:justify-center"
     >
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-      <a href="#">Contact</a>
+      <a href="contact.html">Contact</a>
       <a href="#">FAQ</a>
       <a href="#">Blog</a>
     </div>
@@ -307,12 +307,12 @@
       <hr class="mb-6 w-100 border-black" />
         <!--location buttons-->
         <div class="w-full flex gap-4 pb-4">
-          <button id="toronto-button" class="rounded-full bg-[#3C4BBE] p-3 text-white border border-[#3C4BBE]">Toronto Location</button>
-          <button id="vancouver-button" class="rounded-full border border-[#3C4BBE] p-3 text-[#3C4BBE]">Vancouver Location</button>
+          <button id="toronto-button-visaure" class="rounded-full bg-[#3C4BBE] p-3 text-white border border-[#3C4BBE]">Toronto Location</button>
+          <button id="vancouver-button-visaure" class="rounded-full border border-[#3C4BBE] p-3 text-[#3C4BBE]">Vancouver Location</button>
         </div>
       <div class="flex gap-8 lg:flex-row flex-col">        
         <!--location tab toronto-->
-        <div id="toronto-location" class="w-full lg:w-1/2 gap-4 flex flex-col">
+        <div id="toronto-location-visaure" class="w-full lg:w-1/2 gap-4 flex flex-col">
           <div class="grid grid-cols-2 gap-4">
             <div class="card gap-1">
               <div class="w-[32px] h-[32px] rounded-full bg-[#3C4BBE0D] flex items-center justify-center">
@@ -348,7 +348,7 @@
           </div>
         </div>
         <!--location tab vancouver-->
-        <div id="vancouver-location" class="w-full lg:w-1/2 gap-4 flex flex-col hidden">
+        <div id="vancouver-location-visaure" class="w-full lg:w-1/2 gap-4 flex flex-col hidden">
           <div class="grid grid-cols-2 gap-4">
             <div class="card gap-1">
               <div class="w-[32px] h-[32px] rounded-full bg-[#3C4BBE0D] flex items-center justify-center">
@@ -410,7 +410,8 @@
 
     </div>
   </footer>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+    <script src="viasure.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
   </html>
