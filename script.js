@@ -111,7 +111,6 @@ document.getElementById('viasure-button').addEventListener('click', function() {
   document.getElementById('viasure-card').style.display = 'block';
 });
 
-
 document.getElementById('vancouver-button').addEventListener('click', function() {
   document.getElementById('toronto-location').style.display = 'none';
   document.getElementById('toronto-button').classList.remove('bg-[#3c4bbe]', 'text-white');

@@ -7,3 +7,13 @@
 .floating {
     animation: float 4s ease-in-out infinite;
 }
+
+ul.custom-bullet li::before {
+    content: "• ";
+    font-size: 20px;
+    color: #3A4563;
+    line-height: 1.5;
+}
+ul.custom-bullet {
+    list-style-type: none;
+}
