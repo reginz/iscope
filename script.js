@@ -48,7 +48,13 @@ const nextButton = document.getElementById("nextBtn");
 const prevButton = document.getElementById("prevBtn");
 let cardWidth = cards[0].getBoundingClientRect().width;
 
-let currentIndex = 1; // Starting at the 2nd card
+let currentIndex;
+
+if (window.innerWidth <= 768) {
+  currentIndex = 0; // Start at the 1st card on mobile
+} else {
+  currentIndex = 1; // Start at the 2nd card on other devices
+}
 
 updateCarouselPosition();
 
