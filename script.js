@@ -107,7 +107,28 @@ document.getElementById('viasure-button').addEventListener('click', function() {
   this.classList.add('bg-[#3c4bbe]', 'text-white');
   document.getElementById('monalisa-button').classList.remove('bg-[#3c4bbe]', 'text-white');
   document.getElementById('monalisa-button').classList.add('text-[#3c4bbe]');
-
   document.getElementById('monalisa-card').style.display = 'none';
   document.getElementById('viasure-card').style.display = 'block';
+});
+
+document.getElementById('vancouver-button').addEventListener('click', function() {
+  document.getElementById('toronto-location').style.display = 'none';
+  document.getElementById('toronto-button').classList.remove('bg-[#3c4bbe]', 'text-white');
+  document.getElementById('toronto-button').classList.add('text-[#3c4bbe]', 'border-[#3c4bbe]');
+  document.getElementById('toronto-button').style.backgroundColor = 'transparent';
+  this.classList.add('bg-[#3c4bbe]', 'text-white');
+  this.classList.remove('text-[#3c4bbe]', 'border-[#3c4bbe]');
+  this.style.backgroundColor = '#3c4bbe'; // change background color to #3c4bbe
+  document.getElementById('vancouver-location').style.display = 'flex';
+});
+
+document.getElementById('toronto-button').addEventListener('click', function() {
+  this.classList.add('bg-[#3c4bbe]', 'text-white');
+  this.classList.remove('text-[#3c4bbe]', 'border-[#3c4bbe]');
+  this.style.backgroundColor = '#3c4bbe'; // change background color to #3c4bbe
+  document.getElementById('vancouver-button').classList.remove('bg-[#3c4bbe]', 'text-white');
+  document.getElementById('vancouver-button').classList.add('text-[#3c4bbe]', 'border-[#3c4bbe]');
+  document.getElementById('vancouver-button').style.backgroundColor = 'transparent';
+  document.getElementById('toronto-location').style.display = 'flex';
+  document.getElementById('vancouver-location').style.display = 'none';
 });
