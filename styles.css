@@ -21,6 +21,7 @@ h3 {
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--text);
+  background-color: var(--bg-gray);
 }
 
 /* Hamburger button styling */
@@ -84,8 +85,7 @@ nav > div {
   transform: skewY(3deg);
 }
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(394px, 1fr));
+
   row-gap: 2em;
   gap: 1rem;
 }
@@ -147,14 +147,19 @@ nav > div {
   font-weight: 700;
   outline: none;
   transition: ease-in-out;
+  
 }
 .accordion .accordion-item:hover {
   background: var(--primary);
 }
+
 .accordion button:hover,
 .accordion button:focus {
   cursor: pointer;
   color: white;
+}
+.accordion-item:hover::after ,.accordion-item:focus::after{
+  border-radius: 16px;
 }
 .accordion button:hover::after,
 .accordion button:focus::after {
@@ -185,6 +190,8 @@ nav > div {
   width: 10px;
   height: 2px;
   background: currentColor;
+  border-radius: 16px;
+
 }
 .accordion button .icon::after {
   display: block;
@@ -226,16 +233,19 @@ nav > div {
 /* Normal Display */
 .accordion .accordion-item {
   background: #fff;
+  
 }
 
 .accordion button {
   color: var(--black);
+  
 }
 
 /* On Hover and Focus for the accordion item's button */
 .accordion .accordion-item:hover,
 .accordion button:focus {
   background: var(--primary);
+
 }
 
 .accordion button:hover,
