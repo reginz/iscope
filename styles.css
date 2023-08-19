@@ -146,12 +146,13 @@ nav > div {
 .chip {
   background: var(--primary);
   font-weight: 700;
-  display: flex;
+  display: inline-flex;
   gap: 10px;
   padding: 4px 12px;
   color: white;
   width: max-content;
   border-radius: 24px;
+  font-size: 1rem;
 }
 
 .accordion .accordion-item {
@@ -169,7 +170,7 @@ nav > div {
   display: block;
   text-align: left;
   width: 100%;
-  padding: 1.5em 1em;
+  padding: 1.5em 3em 1.5em 1em;
   color: var(--black);
   font-size: 1.15rem;
   font-weight: 400;
@@ -199,14 +200,26 @@ nav > div {
 }
 .accordion button .accordion-title {
   width: 100%;
-  display: block;
-  padding-right: 2rem;
+  display: flex;
+  gap:1rem;
+  flex-wrap: wrap;
 }
+
+
+.accordion button span{
+  display: inline-flex;
+  align-items: center;
+}
+
+.accordion button span.chip{
+  line-height: 1.4rem;
+}
+
 .accordion button .icon {
   display: inline-block;
   position: absolute;
   top: 2rem;
-  right: 1rem;
+  right: 1.5rem;
   width: 22px;
   height: 22px;
   border: 1px solid;
@@ -238,6 +251,12 @@ nav > div {
 .accordion button[aria-expanded="true"] {
   color: var(--primary);
 }
+
+.accordion button[aria-expanded="true"] .chip, .accordion button:hover .chip{
+  color: var(--primary);
+  background: #fff;
+}
+
 .accordion button[aria-expanded="true"] .icon::after {
   width: 0;
 }
@@ -246,6 +265,7 @@ nav > div {
   max-height: 9em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
+  padding-bottom: 1rem;
 }
 .accordion .accordion-content {
   opacity: 0;
