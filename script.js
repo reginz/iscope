@@ -132,3 +132,12 @@ document.getElementById('toronto-button').addEventListener('click', function() {
   document.getElementById('toronto-location').style.display = 'flex';
   document.getElementById('vancouver-location').style.display = 'none';
 });
+
+function toggleDropdown() {
+  var dropdownMenu = document.getElementById("dropdown-menu");
+  if (dropdownMenu.style.display === "none") {
+    dropdownMenu.style.display = "block";
+  } else {
+    dropdownMenu.style.display = "none";
+  }
+}
