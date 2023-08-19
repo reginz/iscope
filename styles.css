@@ -21,6 +21,7 @@ h3 {
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--text);
+  background-color: var(--bg-gray);
 }
 
 /* Hamburger button styling */
@@ -84,8 +85,7 @@ nav > div {
   transform: skewY(3deg);
 }
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(394px, 1fr));
+
   row-gap: 2em;
   gap: 1rem;
 }

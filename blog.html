@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <title>ISCOPE WELNESS</title>
+</head>
+<body>
+
+<nav
+        class="bg-[--bg-gray] flex items-center justify-between container py-6"
+>
+    <img src="icons/logo.svg" alt="iscope logo" />
+    <div class="flex items-center">
+        <button class="flex md:hidden" onclick="toggleMenu()">
+            <img src="icons/menu.svg" alt="menu" />
+        </button>
+
+        <div
+                class="menu hidden gap-6 flex flex-col absolute mt-8 text-right p-3 rounded-lg bg-[#eff4fa] drop-shadow right-8 md:bg-transparent md:flex-row md:flex md:drop-shadow-none md:mt-0 md:p-0 md:justify-center"
+        >
+            <a href="#"><b>Home</b></a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+            <a href="#">Blog</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <div class=" flex-col justify-center items-start gap-2 flex w-full mb-[2rem]">
+            <div class="pb-4 flex-col justify-center items-start gap-2 flex">
+                <h1 class=" text-5xl font-bold">Blog</h1>
+                <div class="text-slate-700 text-base font-light">Read our latest articles and learn more about your sexual health.</div>
+            </div>
+            <div class="w-full h-px bg-[#3A4563]"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+            <a href="">
+                <div class="w-full h-full flex-col justify-start items-start inline-flex hover:underline cursor-pointer">
+                    <img src="images/ray-of-lights.webp" alt="blog cover" class="aspect-video bg-cover rounded-2xl">
+                    <div class="self-stretch px-2 py-4 rounded-bl-xl rounded-br-xl flex-col justify-start items-start gap-2.5 flex">
+                        <div class="self-stretch text-zinc-900 text-xl font-semibold">Lorem ipsum dolor sit amet</div>
+                        <div class="self-stretch text-slate-700 text-base font-light leading-normal">Lorem ipsum dolor sit amet consectetur. Volutpat tempus egestas et metus venenatis netus nunc. Nunc donec tortor non mauris pharetra elit velit sem.</div>
+                    </div>
+
+                </div>
+            </a>
+            <div class="">Kolon 2</div>
+            <div class="">Kolon 3</div>
+        </div>
+    </div>
+</main>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
